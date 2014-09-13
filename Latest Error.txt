@@ -1,0 +1,19 @@
+LD retroarch
+obj-unix/input/linuxraw_input.o: In function `linuxraw_input_init':
+/home/user/libretro-super/retroarch/input/linuxraw_input.c:102: warning: warning: sigaction is not implemented and will always fail
+obj-unix/retroarch.o: In function `rarch_fail':
+/home/user/libretro-super/retroarch/general.h:857: undefined reference to `__longjmp_chk'
+obj-unix/retroarch.o: In function `db_to_gain':
+/home/user/libretro-super/retroarch/general.h:845: undefined reference to `__powf_finite'
+obj-unix/driver.o: In function `rarch_fail':
+/home/user/libretro-super/retroarch/general.h:857: undefined reference to `__longjmp_chk'
+obj-unix/settings.o: In function `db_to_gain':
+/home/user/libretro-super/retroarch/general.h:845: undefined reference to `__powf_finite'
+obj-unix/settings_data.o: In function `db_to_gain':
+/home/user/libretro-super/retroarch/gfx/../general.h:845: undefined reference to `__powf_finite'
+obj-unix/dynamic.o: In function `rarch_fail':
+/home/user/libretro-super/retroarch/general.h:857: undefined reference to `__longjmp_chk'
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDL2main.so: undefined reference to `SDL_main'
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libppapi_simple.so: undefined reference to `PSUserMainGet'
+collect2: ld returned 1 exit status
+make: *** [retroarch] Error 1
