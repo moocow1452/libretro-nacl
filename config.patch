@@ -1,0 +1,9 @@
+--- config.1	2014-09-14 18:52:57.619341082 -0400
++++ config.2	2014-09-14 18:50:32.278337314 -0400
+@@ -1,5 +1,5 @@
+ CC = /home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/bin/x86_64-nacl-gcc
+-CFLAGS = 
++CFLAGS = -Dmain=SDL_main 
+ CXX = /home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/bin/x86_64-nacl-g++
+ CXXFLAGS = 
+ ASFLAGS = 

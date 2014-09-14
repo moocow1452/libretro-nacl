@@ -1,19 +1,29 @@
 LD retroarch
-obj-unix/input/linuxraw_input.o: In function `linuxraw_input_init':
-/home/user/libretro-super/retroarch/input/linuxraw_input.c:102: warning: warning: sigaction is not implemented and will always fail
-obj-unix/retroarch.o: In function `rarch_fail':
-/home/user/libretro-super/retroarch/general.h:857: undefined reference to `__longjmp_chk'
-obj-unix/retroarch.o: In function `db_to_gain':
-/home/user/libretro-super/retroarch/general.h:845: undefined reference to `__powf_finite'
-obj-unix/driver.o: In function `rarch_fail':
-/home/user/libretro-super/retroarch/general.h:857: undefined reference to `__longjmp_chk'
-obj-unix/settings.o: In function `db_to_gain':
-/home/user/libretro-super/retroarch/general.h:845: undefined reference to `__powf_finite'
-obj-unix/settings_data.o: In function `db_to_gain':
-/home/user/libretro-super/retroarch/gfx/../general.h:845: undefined reference to `__powf_finite'
-obj-unix/dynamic.o: In function `rarch_fail':
-/home/user/libretro-super/retroarch/general.h:857: undefined reference to `__longjmp_chk'
-/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDL2main.so: undefined reference to `SDL_main'
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libppapi_simple.so: undefined reference to `PSUserMainGet'
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libtar.a(extract.o): In function `tar_extract_file':
+extract.c:(.text+0xa9c): warning: warning: geteuid is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDLmain.so: warning: warning: umount is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: the `getwd' function is dangerous and should not be used.
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: sigaction is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: truncate is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: kill is not implemented and will always fail
+CC tools/retroarch-joyconfig.c
+LD tools/retroarch-joyconfig
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libtar.a(extract.o): In function `tar_extract_file':
+extract.c:(.text+0xa9c): warning: warning: geteuid is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDLmain.so: warning: warning: umount is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: the `getwd' function is dangerous and should not be used.
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: sigaction is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: truncate is not implemented and will always fail
+/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: kill is not implemented and will always fail
+obj-unix/tools/input_common_joyconfig.o: In function `input_joypad_init_driver':
+/home/user/libretro-super/retroarch/input/input_common.c:98: undefined reference to `linuxraw_joypad'
+/home/user/libretro-super/retroarch/input/input_common.c:91: undefined reference to `linuxraw_joypad'
+/home/user/libretro-super/retroarch/input/input_common.c:99: undefined reference to `linuxraw_joypad'
+/home/user/libretro-super/retroarch/input/input_common.c:99: undefined reference to `linuxraw_joypad'
+obj-unix/tools/input_common_joyconfig.o: In function `input_joypad_init_first':
+/home/user/libretro-super/retroarch/input/input_common.c:113: undefined reference to `linuxraw_joypad'
+obj-unix/tools/input_common_joyconfig.o:(.rodata+0x16e0): more undefined references to `linuxraw_joypad' follow
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDLmain.so: undefined reference to `SDL_main'
 collect2: ld returned 1 exit status
-make: *** [retroarch] Error 1
+make: *** [tools/retroarch-joyconfig] Error 1
+Failed to build RetroArch
