@@ -121,11 +121,10 @@ build_retroarch()
       check_deps
       
       if [ -z "${NOCLEAN}" ]; then
-        ./configure $ENABLE_GLES $ENABLE_NEON --disable-opengl --disable-python --disable-netplay --disable-7zip --disable-freetype --disable-sdl2
+        ./configure $ENABLE_GLES $ENABLE_NEON --disable-opengl --disable-python --disable-netplay --disable-7zip --disable-freetype --disable-sdl2 --disable-zlib
       	${MAKE} -f Makefile platform=${FORMAT_COMPILER_TARGET} CC="gcc ${RARCHCFLAGS}" $COMPILER -j$JOBS clean || die "Failed to clean RetroArch"
       fi
-      ${MAKE} -f ../Makefile.nacl platform=${FORMAT_COMPILER_TARGET} CC="gcc ${RARCHCFLAGS}" $COMPILER -j$JOBS 
-      patch config.mk < ../config.patch && nacl-make.sh -f ../Makefile.nacl || die "Failed to build RetroArch"
+        patch config.mk < ../config.patch && nacl-make.sh -f ../Makefile.nacl || die "Failed to build RetroArch"
    else
       echo "RetroArch not fetched, skipping ..."
    fi
