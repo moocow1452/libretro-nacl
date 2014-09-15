@@ -2,28 +2,7 @@ LD retroarch
 /home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libtar.a(extract.o): In function `tar_extract_file':
 extract.c:(.text+0xa9c): warning: warning: geteuid is not implemented and will always fail
 /home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDLmain.so: warning: warning: umount is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: the `getwd' function is dangerous and should not be used.
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: sigaction is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: truncate is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: kill is not implemented and will always fail
-CC tools/retroarch-joyconfig.c
-LD tools/retroarch-joyconfig
-/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libtar.a(extract.o): In function `tar_extract_file':
-extract.c:(.text+0xa9c): warning: warning: geteuid is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDLmain.so: warning: warning: umount is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: the `getwd' function is dangerous and should not be used.
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: sigaction is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: truncate is not implemented and will always fail
-/home/user/nacl_sdk/pepper_canary/lib/glibc_x86_64/Release/libnacl_io.so: warning: warning: kill is not implemented and will always fail
-obj-unix/tools/input_common_joyconfig.o: In function `input_joypad_init_driver':
-/home/user/libretro-super/retroarch/input/input_common.c:98: undefined reference to `linuxraw_joypad'
-/home/user/libretro-super/retroarch/input/input_common.c:91: undefined reference to `linuxraw_joypad'
-/home/user/libretro-super/retroarch/input/input_common.c:99: undefined reference to `linuxraw_joypad'
-/home/user/libretro-super/retroarch/input/input_common.c:99: undefined reference to `linuxraw_joypad'
-obj-unix/tools/input_common_joyconfig.o: In function `input_joypad_init_first':
-/home/user/libretro-super/retroarch/input/input_common.c:113: undefined reference to `linuxraw_joypad'
-obj-unix/tools/input_common_joyconfig.o:(.rodata+0x16e0): more undefined references to `linuxraw_joypad' follow
-/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/x86_64-nacl/usr/lib/libSDLmain.so: undefined reference to `SDL_main'
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/bin/../lib/gcc/x86_64-nacl/4.4.3/../../../../x86_64-nacl/bin/ld: obj-unix/performance.o: undefined reference to symbol 'clock_gettime@@GLIBC_2.2.5'
+/home/user/nacl_sdk/pepper_canary/toolchain/linux_x86_glibc/bin/../x86_64-nacl/lib/librt.so.9b15f6a6: error adding symbols: DSO missing from command line
 collect2: ld returned 1 exit status
-make: *** [tools/retroarch-joyconfig] Error 1
-Failed to build RetroArch
+make: *** [retroarch] Error 1
